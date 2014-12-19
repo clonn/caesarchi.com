@@ -70,3 +70,4 @@ gulp.task('watch', function () {
 
 // Default Task
 gulp.task('default', ['coffee','compass','templates', 'images', 'express','watch']);
+gulp.task('build', ['coffee','compass','templates', 'images']);
