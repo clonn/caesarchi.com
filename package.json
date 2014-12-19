@@ -3,7 +3,7 @@
   "version": "0.5.0",
   "scripts": {
     "start": "gulp",
-    "page": "cp -r dist/* ./. && git checkout gh-pages"
+    "page": "gulp build && git checkout gh-pages && cp -r dist/* ./."
   },
   "dependencies": {
     "gulp-concat": "~2.1.7",
