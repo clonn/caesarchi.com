@@ -1,2 +1,4 @@
-.sass-cache/
-node_modules/
+node_modules
+dist
+.sass-cache
+npm-debug.log
