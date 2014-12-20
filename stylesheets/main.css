@@ -64,30 +64,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 7, ../../src/stylesheets/main.scss */
-section {
+.container {
   font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
 }
-/* line 9, ../../src/stylesheets/main.scss */
-section .main-section {
+/* line 10, ../../src/stylesheets/main.scss */
+.container > div {
+  max-width: 100%;
   height: 100vh;
 }
-/* line 11, ../../src/stylesheets/main.scss */
-section .main-section h1 {
+/* line 15, ../../src/stylesheets/main.scss */
+.container .main-section h1 {
   font-family: 'Lato', sans-serif;
   font-size: 12.0em;
   padding-left: 0.2em;
   color: #fff;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 0, rgba(0, 0, 255, 0.2) 2px 2px 0, rgba(0, 0, 255, 0.2) 3px 3px 0;
 }
-/* line 18, ../../src/stylesheets/main.scss */
-section .main-section p {
+/* line 22, ../../src/stylesheets/main.scss */
+.container .main-section p {
   color: #888;
   font-size: 3.0em;
   position: absolute;
   padding-left: 1em;
 }
-/* line 25, ../../src/stylesheets/main.scss */
-section .main-section::after {
+/* line 29, ../../src/stylesheets/main.scss */
+.container .main-section::after {
   content: "";
   opacity: 0.5;
   background: url(http://2.bp.blogspot.com/-oK2u69MZOEw/UuJZHCoxjvI/AAAAAAAARIk/ukVnOp8lU68/s1600/JavaScript-logo.png) no-repeat;
@@ -100,9 +102,26 @@ section .main-section::after {
   position: absolute;
   z-index: -1;
 }
-/* line 40, ../../src/stylesheets/main.scss */
-section .intro-section {
-  background: url(http://www.htmliseasy.com/about_gifs/hello_world.gif) no-repeat;
-  height: 100vh;
+/* line 44, ../../src/stylesheets/main.scss */
+.container .intro-section {
+  background: url(https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/p960x960/10257164_10152725119659838_336180642126829356_o.jpg) no-repeat center center fixed;
   background-size: cover;
+}
+
+/* line 50, ../../src/stylesheets/main.scss */
+.ribbon {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #000;
+  width: 100%;
+  position: relative;
+  opacity: 0.3;
+  top: 70%;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 61, ../../src/stylesheets/main.scss */
+.ribbon p {
+  font-size: 5em;
 }
